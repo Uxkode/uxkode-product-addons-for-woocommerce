@@ -1,0 +1,80 @@
+/**
+ * Frontend styles for Uxkode Product Addons for WooCommerce
+ *
+ * Sections:
+ * - Product Add-Ons Styles
+ * - Custom Buttons Styles
+ */
+
+/* ========== Product Add-Ons Styles ========== */
+.uxkode-addons-section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 20px;
+    padding: 10px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+.uxkode-addons-section .uxkode-heading h3 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+.uxkode-addons-section .uxkode-heading p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #454545;
+    margin: 0;
+    padding: 5px 0 10px;
+}
+.uxkode-heading p {
+    margin-bottom: 0 !important;
+}
+.uxkode-addons-section .uxkode-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.uxkode-addons-section .uxkode-checkbox-wrapper input,
+.uxkode-addons-section .uxkode-checkbox-wrapper label {
+    cursor: pointer;
+}
+.uxkode-addons-section .uxkode-addons-wrapper input {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin: 10px 0;
+    border-radius: 7px;
+}
+.uxkode-addons-section .uxkode-addons-wrapper label {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    margin: 0;
+}
+.uxkode-addons-section .uxkode-input-field,
+.uxkode-addons-section .uxkode-textarea-field {
+    width: 100%;
+    height: 45px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+}
+.uxkode-addons-section .uxkode-textarea-field {
+    min-height: 150px;
+    resize: none;
+}
+
+/* ========== Custom Buttons Styles ========== */
+.uxkode-custom-buttons-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 20px;
+}
+.uxkode-single-button,
+.uxkode-dual-buttons {
+    justify-content: flex-start;
+}

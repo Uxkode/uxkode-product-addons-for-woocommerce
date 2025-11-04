@@ -1,0 +1,83 @@
+/**
+ * Global CSS Styles for Uxkode Product Addons for WooCommerce
+ *
+ * Sections:
+ * - CSS Variables
+ * - Flexbox Utilities
+ * - Spacer Utility
+ * - Custom Button Styles
+ */
+
+/* ========== CSS Variables ========== */
+:root {
+    --uxkode-woo-section-max-width: 1140px;
+    --uxkode-woo-primary-color: #1890ff;
+    --uxkode-woo-secondary-color: #f0f8ff;
+    --uxkode-woo-accent-color: #ff6b35;
+    --uxkode-woo-border-color: #e0e0e0;
+    --uxkode-woo-title-color: #091931;
+    --uxkode-woo-white-color: #ffffff;
+    --uxkode-woo-success-color: #00b45f;
+    --uxkode-woo-error-color: #dc3545;
+
+    --uxkode-custom-btn1-bg-color: #ff6b35;
+    --uxkode-custom-btn1-text-color: #ffffff;
+    --uxkode-custom-btn1-border-color: #ff6b35;
+    --uxkode-custom-btn1-bg-hover-color: #1890ff;
+    --uxkode-custom-btn1-text-hover-color: #ffffff;
+    --uxkode-custom-btn1-border-hover-color: #1890ff;
+
+    --uxkode-custom-btn2-bg-color: #ffffff;
+    --uxkode-custom-btn2-text-color: #ff6b35;
+    --uxkode-custom-btn2-border-color: #ff6b35;
+    --uxkode-custom-btn2-bg-hover-color: #1890ff;
+    --uxkode-custom-btn2-text-hover-color: #ffffff;
+    --uxkode-custom-btn2-border-hover-color: #1890ff;
+}
+
+/* ========== Flexbox Utilities ========== */
+.uxkode-flex,
+.uxkode-flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.uxkode-flex-column {
+    flex-direction: column;
+}
+
+/* ========== Spacer Utility ========== */
+.uxkode-spacer {
+    height: 20px;
+}
+
+/* ========== Custom Button Styles ========== */
+.uxkode-custom-btn-1,
+.uxkode-custom-btn-2 {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: var(--uxkode-custom-btn1-bg-color);
+    color: var(--uxkode-custom-btn1-text-color);
+    border: 1px solid var(--uxkode-custom-btn1-border-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.uxkode-custom-btn-1:hover {
+    background-color: var(--uxkode-custom-btn1-bg-hover-color);
+    color: var(--uxkode-custom-btn1-text-hover-color);
+    border: 1px solid var(--uxkode-custom-btn1-border-hover-color);
+}
+.uxkode-custom-btn-2 {
+    background-color: var(--uxkode-custom-btn2-bg-color);
+    color: var(--uxkode-custom-btn2-text-color);
+    border: 1px solid var(--uxkode-custom-btn2-border-color);
+}
+.uxkode-custom-btn-2:hover {
+    background-color: var(--uxkode-custom-btn2-bg-hover-color);
+    color: var(--uxkode-custom-btn2-text-hover-color);
+    border: 1px solid var(--uxkode-custom-btn2-border-hover-color);
+}

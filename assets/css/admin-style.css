@@ -1,0 +1,425 @@
+/**
+ * Admin styles for Uxkode Product Addons for WooCommerce
+ *
+ * Sections:
+ * - Global Admin Styles
+ * - Uxkode Button Styles
+ * - Admin Navigation Bar
+ * - Brand Styles
+ * - Menu Styles
+ * - Hamburger Toggle
+ * - Dashboard Stats
+ * - Product Tab Title
+ * - Product Add-Ons Styles
+ * - Custom Buttons Styles
+ * - Flex Table for Button Styling
+ * - Live Preview Cell
+ * - Admin Settings Page Section
+ * - Responsive Styles
+ */
+
+/* ========== Global Admin Styles ========== */
+.uxkode-addons-body {
+    width: 100%;
+    max-width: var(--uxkode-woo-section-max-width);
+    background-color: var(--uxkode-woo-secondary-color);
+}
+.uxkode-addons-body h1, h2, h3, h4, h5, h6 {
+    color: var(--uxkode-woo-title-color);
+}
+.uxkode-addons-body .wp-list-table thead tr {
+    background-color: var(--uxkode-woo-white-color);
+}
+.uxkode-addons-body .striped>tbody>:nth-child(odd) {
+    background-color: var(--uxkode-woo-secondary-color);
+}
+.uxkode-separator {
+    width: 100%;
+    margin: 20px 0px;
+}
+.uxkode-product-data-tab-title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--uxkode-woo-title-color);
+}
+.uxkode-admin-content-wrapper {
+    padding: 20px;
+}
+.uxkode-admin-content-wrapper h1,
+.uxkode-admin-content-wrapper h2,
+.uxkode-admin-content-wrapper h3 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    color: var(--uxkode-woo-title-color);
+}
+.uxkode-admin-content-wrapper h1 {
+    margin-bottom: 15px;
+}
+.uxkode-admin-content-wrapper h2 {
+    font-size: 22px;
+    line-height: 30px;
+}
+.uxkode-admin-content-wrapper h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.uxkode-addons-body .submit {
+    padding: 0;
+    margin: 0;
+}
+
+/* ========== uxkode Button Styles ========== */
+.uxkode-addons-body .button-primary,
+.uxkode-button-outline,
+.uxkode-primary-btn,
+.uxkode-secondary-btn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: var(--uxkode-woo-primary-color);
+    color: var(--uxkode-woo-white-color);
+    border: 1px solid var(--uxkode-woo-primary-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+.uxkode-addons-body .button-primary:hover {
+    background-color: var(--uxkode-woo-success-color);
+    color: var(--uxkode-woo-white-color);
+    border: 1px solid var(--uxkode-woo-success-color);
+}
+.uxkode-button-outline {
+    background-color: var(--uxkode-woo-white-color);
+    color: var(--uxkode-woo-primary-color);
+    border: 1px solid var(--uxkode-woo-primary-color);
+}
+.uxkode-button-outline:hover {
+    background-color: var(--uxkode-woo-success-color);
+    color: var(--uxkode-woo-white-color);
+    border: 1px solid var(--uxkode-woo-success-color);
+}
+.uxkode-primary-btn {
+    background-color: var(--uxkode-woo-accent-color);
+    color: var(--uxkode-woo-white-color);
+    border: 1px solid var(--uxkode-woo-accent-color);
+}
+.uxkode-primary-btn:hover,
+.uxkode-secondary-btn:hover {
+    background-color: var(--uxkode-woo-primary-color);
+    color: var(--uxkode-woo-white-color);
+    border: 1px solid var(--uxkode-woo-primary-color);
+}
+.uxkode-secondary-btn {
+    background-color: var(--uxkode-woo-white-color);
+    color: var(--uxkode-woo-accent-color);
+    border: 1px solid var(--uxkode-woo-accent-color);
+}
+
+/* ========== Admin Navigation Bar ========== */
+.uxkode-admin-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    top: 0;
+    position: relative;
+    background: var(--uxkode-woo-white-color);
+    color: var(--uxkode-woo-title-color);
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0px 3px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+/* ========== Brand Styles ========== */
+.uxkode-admin-brand {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--uxkode-woo-white-color);
+}
+.uxkode-admin-brand .dashicons {
+    margin-right: 8px;
+}
+
+/* ========== Menu Styles ========== */
+.uxkode-admin-menu {
+    display: flex;
+    gap: 20px;
+}
+.uxkode-admin-menu a {
+    color: var(--uxkode-woo-title-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+.uxkode-admin-menu a:hover {
+    background-color: var(--uxkode-woo-primary-color);
+    color: var(--uxkode-woo-white-color);
+}
+.uxkode-admin-menu a.active {
+    background-color: var(--uxkode-woo-primary-color);
+    color: var(--uxkode-woo-white-color);
+}
+
+/* ========== Hamburger Toggle ========== */
+.uxkode-admin-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--uxkode-woo-title-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ========== Dashboard Stats ========== */
+.uxkode-dashboard-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.uxkode-dashboard-stats h2 {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 5px 0;
+}
+.product-addons-stats, .custom-buttons-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.uxkode-stat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 160px;
+    min-height: 100px;
+    background: var(--uxkode-woo-white-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+    padding: 20px;
+}
+.uxkode-stat-card h3 {
+    font-size: 34px;
+    line-height: 32px;
+    color: var(--uxkode-woo-primary-color);
+    margin: 0 0 5px;
+}
+.uxkode-stat-card p {
+    color: var(--uxkode-woo-title-color);
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+/* ========== Product Tab Title ========== */
+.uxkode-available-addons h3,
+.uxkode-available-custom-btn h3 {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--uxkode-woo-title-color);
+    margin: 0 0 15px;
+}
+
+/* ========== Product Add-Ons Styles ========== */
+#woocommerce-product-data .wc-tabs .uxkode_product_addons_tab a::before,
+#woocommerce-product-data .wc-tabs .uxkode_custom_buttons_tab a::before {
+    content: "\f109";
+}
+.uxkode-admin-form input[type="text"],
+.uxkode-admin-form input[type="number"],
+.uxkode-admin-form select {
+    min-width: 320px;
+}
+.woocommerce_options_panel .uxkode-custom-btn-type label,
+.woocommerce_options_panel .uxkode-custom-btn-type legend {
+    margin: 0 20px 20px 0;
+}
+.woocommerce_options_panel .uxkode-custom-btn-input input[type="text"],
+.woocommerce_options_panel .uxkode-custom-btn-input input[type="url"],
+.woocommerce_options_panel .uxkode-custom-btn-input select {
+    width: 100%;
+    max-width: 320px;
+}
+#uxkode-product-addons-data, #uxkode-custom-buttons-data {
+    padding: 20px;
+}
+.uxkode-product-addons-label span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.uxkode-available-addons, .uxkode-custom-buttons-fields {
+    display: flex;
+    flex-direction: column;
+}
+.uxkode-available-addons .uxkode-description {
+    margin-top: 10px;
+}
+.uxkode-available-addons select option {
+    font-size: 16px;
+    border: 1px solid var(--uxkode-woo-border-color);
+    margin: 5px 0;
+    padding: 6px;
+}
+.uxkode-available-addons select option:checked {
+    background-color: var(--uxkode-woo-primary-color);
+    color: var(--uxkode-woo-white-color);
+    border: 1px solid var(--uxkode-woo-border-color);
+    margin-left: 10px;
+}
+
+/* ========== Custom Buttons Styles ========== */
+.uxkode-custom-btn-type h4 {
+    font-size: 17px;
+    line-height: 25px;
+    margin: 0 0 15px;
+}
+.uxkode-available-custom-btn, .uxkode-custom-btn-group, .uxkode-custom-btn-input {
+    display: flex;
+    flex-direction: column;
+}
+.uxkode-custom-btn-group {
+    gap: 10px;
+}
+.uxkode-custom-btn-group span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* ========== Flex Table for Button Styling ========== */
+.uxkode-style-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.uxkode-style-table thead th {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px;
+    background: var(--uxkode-woo-secondary-color);
+    border: 1px solid var(--uxkode-woo-border-color);
+}
+.uxkode-style-table tbody tr {
+    transition: background-color 0.25s ease;
+}
+.uxkode-style-table tbody tr:hover {
+    background-color: var(--uxkode-woo-white-color);
+}
+.uxkode-style-table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border: 1px solid var(--uxkode-woo-border-color);
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.input-group label {
+    min-width: 140px;
+    font-weight: 500;
+    color: var(--uxkode-woo-title-color);
+}
+.input-group input[type="color"] {
+    width: 35px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    background: var(--uxkode-woo-white-color);
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+.input-group input[type="number"],
+.input-group select {
+    padding: 6px 10px;
+    border: 1px solid var(--uxkode-woo-border-color);
+    border-radius: 4px;
+    width: 120px;
+    font-size: 14px;
+}
+
+/* ========== Live Preview Cell ========== */
+.live-preview-cell {
+    text-align: center;
+    background: var(--uxkode-woo-white-color);
+    border: 1px solid var(--uxkode-woo-border-color);
+}
+
+/* ========== Admin Settings Page Section ========== */
+.uxkode-admin-section {
+    background-color: var(--uxkode-woo-white-color);
+    border: 1px solid var(--uxkode-woo-border-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.uxkode-admin-section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.25em;
+}
+.uxkode-admin-section p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 782px) {
+    .uxkode-admin-header {
+        justify-content: space-between;
+    }
+    .uxkode-admin-toggle {
+        display: block;
+    }
+    .uxkode-admin-menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--uxkode-woo-title-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        gap: 10px;
+    }
+    .uxkode-admin-menu.show {
+        display: flex;
+    }
+    .uxkode-admin-menu a {
+        color: var(--uxkode-woo-white-color);
+    }
+    .uxkode-admin-form input[type="text"],
+    .uxkode-admin-form input[type="number"],
+    .uxkode-admin-form select {
+        min-width: 100%;
+    }
+    .input-group {
+        padding-left: 20px;
+    }
+    .form-table thead th,
+    .form-table tbody td {
+        display: block;
+        width: 100%;
+        padding-left: 0 !important;
+    }
+    .form-table tbody td:nth-child(2) {
+        background-color: transparent;
+        border-left: none;
+        padding-left: 0;
+        border-radius: 0;
+    }
+}
