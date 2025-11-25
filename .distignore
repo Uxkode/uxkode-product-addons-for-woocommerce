@@ -1,0 +1,38 @@
+# Git / development files
+.git/
+.github/
+.gitattributes
+.gitignore
+
+# System / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Development docs & tests
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+tests/
+phpunit.xml
+phpcs.xml
+docs/
+examples/
+
+# Build / dependency files
+node_modules/
+vendor/
+package.json
+package-lock.json
+composer.json
+composer.lock
+webpack.config.js
+Gruntfile.js
+gulpfile.js
+
+# WordPress.org assets
+.wordpress-org/
+
+# log files
+*.log
