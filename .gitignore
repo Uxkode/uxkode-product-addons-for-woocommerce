@@ -1,3 +1,6 @@
+# WordPress.org plugin assets
+.wordpress-org/
+
 # Git metadata
 .git/
 .gitattributes
@@ -23,6 +26,3 @@ gulpfile.js
 
 # Logs
 *.log
-
-# WordPress.org assets
-.wordpress-org/
