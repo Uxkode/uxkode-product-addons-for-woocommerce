@@ -44,6 +44,9 @@
     color: var(--uxkode-woo-title-color);
 }
 .uxkode-admin-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 .uxkode-admin-content-wrapper h1,
@@ -55,7 +58,8 @@
     color: var(--uxkode-woo-title-color);
 }
 .uxkode-admin-content-wrapper h1 {
-    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 5px;
 }
 .uxkode-admin-content-wrapper h2 {
     font-size: 22px;
@@ -235,7 +239,8 @@
 .uxkode-admin-form input[type="text"],
 .uxkode-admin-form input[type="number"],
 .uxkode-admin-form select {
-    min-width: 320px;
+    width: 100%;
+    max-width: 350px;
 }
 .woocommerce_options_panel .uxkode-custom-btn-type label,
 .woocommerce_options_panel .uxkode-custom-btn-type legend {
@@ -297,8 +302,7 @@
 
 /* ========== Flex Table for Button Styling ========== */
 .uxkode-style-table {
-    width: 100%;
-    max-width: 800px;
+    width: 750px;
     border-collapse: collapse;
     margin: 25px 0;
     font-family: Arial, sans-serif;
@@ -360,6 +364,8 @@
 
 /* ========== Admin Settings Page Section ========== */
 .uxkode-admin-section {
+    width: 100%;
+    max-width: 600px;
     background-color: var(--uxkode-woo-white-color);
     border: 1px solid var(--uxkode-woo-border-color);
     border-radius: 10px;
@@ -369,7 +375,7 @@
 }
 .uxkode-admin-section h2 {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 1.25em;
 }
 .uxkode-admin-section p {
@@ -378,7 +384,7 @@
 }
 
 /* ========== Responsive Styles ========== */
-@media (max-width: 782px) {
+@media (max-width: 785px) {
     .uxkode-admin-header {
         justify-content: space-between;
     }
@@ -410,6 +416,9 @@
     .input-group {
         padding-left: 20px;
     }
+    .uxkode-style-table {
+        width: 550px;
+    }
     .form-table thead th,
     .form-table tbody td {
         display: block;
@@ -421,5 +430,15 @@
         border-left: none;
         padding-left: 0;
         border-radius: 0;
+    }
+}
+@media (max-width: 575px) {
+    .uxkode-style-table {
+        width: 350px;
+    }
+}
+@media (max-width: 375px) {
+    .uxkode-style-table {
+        width: 100%;
     }
 }
