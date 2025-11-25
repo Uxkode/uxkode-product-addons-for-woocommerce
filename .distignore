@@ -1,3 +1,6 @@
+# WordPress.org plugin assets
+.wordpress-org/
+
 # Git / development files
 .git/
 .github/
@@ -30,9 +33,6 @@ composer.lock
 webpack.config.js
 Gruntfile.js
 gulpfile.js
-
-# WordPress.org assets
-.wordpress-org/
 
 # log files
 *.log
