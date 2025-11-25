@@ -3,7 +3,7 @@ Contributors: uxkode, uzzalhossen
 Tags: woocommerce, product-addons, custom-buttons, woocommerce-addons, uxkode-addons
 Requires at least: 5.8
 Tested up to: 6.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -87,6 +87,9 @@ Yes. It is compatible with any WooCommerce-ready theme.
 
 == Changelog ==
 
+= 1.0.1 =
+* Admin UI improvements
+
 = 1.0.0 =
 * Initial release
 * Product Add-Ons with multiple field types, optional customer input collection, and dynamic pricing
@@ -96,6 +99,9 @@ Yes. It is compatible with any WooCommerce-ready theme.
 
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Improved Admin UI in the plugin dashboard page.
 
 = 1.0.0 =
 First stable release of **Uxkode Product Addons for WooCommerce**. Start adding product Add-Ons and Custom Buttons to your store today!
