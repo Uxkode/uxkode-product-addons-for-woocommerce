@@ -2,8 +2,8 @@
 Contributors: uxkode, uzzalhossen
 Tags: woocommerce, product-addons, custom-buttons, woocommerce-addons, uxkode-addons
 Requires at least: 5.8
-Tested up to: 6.8
-Stable tag: 1.0.1
+Tested up to: 7.1
+Stable tag: 1.0.2
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -87,6 +87,9 @@ Yes. It is compatible with any WooCommerce-ready theme.
 
 == Changelog ==
 
+= 1.0.2 =
+* Tested compatibility with the latest WordPress and WooCommerce versions
+
 = 1.0.1 =
 * Admin UI improvements
 
@@ -99,6 +102,9 @@ Yes. It is compatible with any WooCommerce-ready theme.
 
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Updated compatibility with the latest WordPress and WooCommerce versions. Update recommended.
 
 = 1.0.1 =
 Improved Admin UI in the plugin dashboard page.
