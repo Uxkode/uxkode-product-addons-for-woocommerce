@@ -3,14 +3,14 @@
  * Plugin Name: Uxkode Product Addons for WooCommerce
  * Requires Plugins: woocommerce
  * Description: Add unlimited custom Product Add-Ons with optional customer inputs and single or dual Custom Buttons to your WooCommerce products.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Uxkode
  * Author URI: https://www.uxkode.com
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Tags: woocommerce, product-addons, custom-buttons, woocommerce-addons, uxkode-addons
  * Requires at least: 5.8
- * Tested up to: 6.8
+ * Tested up to: 7.1
  * Requires PHP: 7.4
  *
  * @package Uxkode_Addons_WooCommerce
@@ -31,7 +31,7 @@ if ( ! defined( 'UXKODE_ADDONS_SLUG' ) ) {
 	define( 'UXKODE_ADDONS_SLUG', 'uxkode-product-addons-for-woocommerce' );
 }
 if ( ! defined( 'UXKODE_ADDONS_VERSION' ) ) {
-	define( 'UXKODE_ADDONS_VERSION', '1.0.1' );
+	define( 'UXKODE_ADDONS_VERSION', '1.0.2' );
 }
 if ( ! defined( 'UXKODE_ADDONS_DB_VERSION' ) ) {
 	define( 'UXKODE_ADDONS_DB_VERSION', '1.0.0' );
